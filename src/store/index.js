@@ -245,6 +245,13 @@ export const mainStore = defineStore("mainData", {
           order: 38,
           show: true,
         },
+        {
+          label: "立创开源广场",
+          name: "oshwhub",
+          logo: "https://oshwhub.com/favicon.ico",
+          order: 39,
+          show: true,
+        },
       ],
       newsArr: [],
       // 链接跳转方式
