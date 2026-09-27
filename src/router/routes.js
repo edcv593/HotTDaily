@@ -17,6 +17,15 @@ const routes = [
     },
     component: () => import("@/views/List.vue"),
   },
+  // AI 每日简报
+  {
+    path: "/brief",
+    name: "brief",
+    meta: {
+      title: "每日简报",
+    },
+    component: () => import("@/views/Brief.vue"),
+  },
   // 设置页
   {
     path: "/setting",

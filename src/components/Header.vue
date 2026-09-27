@@ -25,6 +25,9 @@
       </div>
       <div class="controls">
         <n-space justify="end">
+          <n-button secondary strong round @click="router.push('/brief')">
+            每日简报
+          </n-button>
           <n-popover v-if="showRefresh">
             <template #trigger>
               <n-button secondary strong round @click="router.go(0)">
@@ -152,6 +155,10 @@ const menuOptions = [
     type: "divider",
   },
   {
+    label: "每日简报",
+    key: "brief",
+  },
+  {
     label: "刷新页面",
     key: "refresh",
     icon: () => {
@@ -188,6 +195,8 @@ const menuOptions = [
 const menuOptionsSelect = (val) => {
   if (val === "refresh") {
     router.go(0);
+  } else if (val === "brief") {
+    router.push("/brief");
   } else if (val === "changeTheme") {
     store.setSiteTheme(store.siteTheme === "light" ? "dark" : "light");
   } else if (val === "setting") {
