@@ -152,6 +152,30 @@ export const mainStore = defineStore("mainData", {
           order: 23,
           show: true,
         },
+        {
+          label: "AcFun",
+          name: "acfun",
+          order: 24,
+          show: true,
+        },
+        {
+          label: "CSDN",
+          name: "csdn",
+          order: 25,
+          show: true,
+        },
+        {
+          label: "V2EX",
+          name: "v2ex",
+          order: 26,
+          show: true,
+        },
+        {
+          label: "气象预警",
+          name: "weatheralarm",
+          order: 27,
+          show: true,
+        },
       ],
       newsArr: [],
       // 链接跳转方式
@@ -213,3 +237,4 @@ export const mainStore = defineStore("mainData", {
     },
   ],
 });
+
