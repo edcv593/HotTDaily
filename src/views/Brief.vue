@@ -84,7 +84,10 @@ const report = ref(null);
 const loading = ref(false);
 const error = ref("");
 const reportDate = ref("");
-const briefUrl = (import.meta.env.VITE_DAILY_BRIEF_URL || "https://edcv593.github.io/DailyBrief").replace(/\/$/, "");
+const briefUrl = (
+  import.meta.env.VITE_DAILY_BRIEF_URL ||
+  "https://raw.githubusercontent.com/edcv593/DailyBrief/gh-pages"
+).replace(/\/$/, "");
 
 const reportDateLabel = computed(() => (reportDate.value ? `更新于 ${reportDate.value}` : "最新日报"));
 
@@ -104,7 +107,7 @@ const loadBrief = async () => {
     reportDate.value = report.value.date || "";
   } catch (err) {
     report.value = null;
-    error.value = "暂时无法获取每日简报，请确认 DailyBrief 的 GitHub Pages 已启用，或配置 VITE_DAILY_BRIEF_URL。";
+    error.value = "暂时无法获取每日简报，请确认 DailyBrief 的 gh-pages 已生成，或配置 VITE_DAILY_BRIEF_URL。";
   } finally {
     loading.value = false;
   }
