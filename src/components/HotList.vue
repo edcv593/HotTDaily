@@ -13,7 +13,7 @@
         <div class="name">
           <n-avatar
             class="ico"
-            :src="`/logo/${hotData.name}.png`"
+            :src="hotData.logo || `/logo/${hotData.name}.png`"
             fallback-src="/ico/icon_error.png"
           />
           <n-text class="name-text">{{ hotData.label }}</n-text>

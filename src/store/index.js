@@ -224,6 +224,27 @@ export const mainStore = defineStore("mainData", {
           order: 35,
           show: true,
         },
+        {
+          label: "什么值得买",
+          name: "smzdm",
+          logo: "https://www.smzdm.com/favicon.ico",
+          order: 36,
+          show: true,
+        },
+        {
+          label: "慢慢买",
+          name: "manmanbuy",
+          logo: "https://www.manmanbuy.com/favicon.ico",
+          order: 37,
+          show: true,
+        },
+        {
+          label: "恩山无线论坛",
+          name: "right",
+          logo: "https://www.right.com.cn/favicon.ico",
+          order: 38,
+          show: true,
+        },
       ],
       newsArr: [],
       // 链接跳转方式
