@@ -176,6 +176,30 @@ export const mainStore = defineStore("mainData", {
           order: 27,
           show: true,
         },
+        {
+          label: "虎扑",
+          name: "hupu",
+          order: 28,
+          show: true,
+        },
+        {
+          label: "历史上的今天",
+          name: "history",
+          order: 29,
+          show: true,
+        },
+        {
+          label: "爱范儿",
+          name: "ifanr",
+          order: 30,
+          show: true,
+        },
+        {
+          label: "新浪",
+          name: "sina",
+          order: 31,
+          show: true,
+        },
       ],
       newsArr: [],
       // 链接跳转方式
