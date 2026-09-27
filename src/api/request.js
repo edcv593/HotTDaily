@@ -63,10 +63,11 @@ axios.interceptors.response.use(
           break;
       }
     } else {
-      $message.error(data.message ? data.message : "请求失败，请稍后重试");
+      $message.error("网络连接失败，请稍后重试");
     }
     return Promise.reject(error);
   }
 );
 
 export default axios;
+
