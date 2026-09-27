@@ -200,6 +200,30 @@ export const mainStore = defineStore("mainData", {
           order: 31,
           show: true,
         },
+        {
+          label: "吾爱破解",
+          name: "52pojie",
+          order: 32,
+          show: true,
+        },
+        {
+          label: "财联社",
+          name: "cls",
+          order: 33,
+          show: true,
+        },
+        {
+          label: "东方财富",
+          name: "eastmoney",
+          order: 34,
+          show: true,
+        },
+        {
+          label: "GitHub",
+          name: "github",
+          order: 35,
+          show: true,
+        },
       ],
       newsArr: [],
       // 链接跳转方式
